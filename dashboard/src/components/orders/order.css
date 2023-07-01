@@ -1,0 +1,16 @@
+.pay {
+  border-radius: 5px;
+  background-color: greenyellow;
+  width: 100%;
+}
+.dispay {
+  border-radius: 5px;
+  background-color: gold;
+  width: 100%;
+}
+.delete{
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(216, 26, 26);
+  width: 100%;
+}

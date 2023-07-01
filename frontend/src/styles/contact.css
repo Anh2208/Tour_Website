@@ -1,0 +1,29 @@
+.contact-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+h4 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.container1 {
+  /* background-color: aqua; */
+  padding: 0 100px;
+  text-align: center;
+}
+.ima {
+  width: 100%;
+  height: auto;
+}
+.text-lable {
+  text-align: left;
+  display: flex;
+}
+.content {
+  display: none;
+}
+.accordion{
+    padding: 0 100px;
+}

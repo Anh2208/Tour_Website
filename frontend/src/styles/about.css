@@ -1,0 +1,44 @@
+.img-class{
+   width: 80%;
+}
+.img-class2{
+   width: 100%;
+   border-radius: 10px;
+}
+.img-class2:hover{
+    transform: scale(1.15);
+}
+.right{
+    padding-left: 100px;
+}
+.about{
+    color: #3c0df4;
+}
+h2{
+    color: #6CBA23;
+    font-size: 50px !important;
+} 
+.link-book{
+    color: white;
+    text-decoration: none;
+    padding: 50px 10px;
+}
+.link-book:hover{
+    color: #6CBA23;
+}
+.content-left{
+    padding-right: 100px;
+}
+.content2{
+    padding: 0 100px;
+    font-size: 26px;
+}
+.content-customer{
+    padding: 0 100px;
+    font-size: 26px;
+    color: white;
+}
+.customer{
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../assets/images/tour.jpg") no-repeat center center;
+}
