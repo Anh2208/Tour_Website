@@ -17,7 +17,9 @@ const SaleStatistics = () => {
               height: "350px",
             }}
             // src="https://charts.mongodb.com/charts-tour-booking-tlwcy/public/dashboards/a04ea405-3ac9-44c8-8480-ffd9bbaf4cbb"
-            src="https://charts.mongodb.com/charts-tour-booking-tlwcy/embed/charts?id=643aea31-8ce8-4fc8-86f6-daab98704c83&maxDataAge=3600&theme=light&autoRefresh=true"
+         // src="https://charts.mongodb.com/charts-tour-booking-tlwcy/embed/charts?id=643b5573-e2f6-48a8-8b7a-c72c541a71b4&maxDataAge=3600&theme=light&autoRefresh=true"
+            src="https://charts.mongodb.com/charts-tourism-nkvte/embed/charts?id=6516964e-bf14-4968-812c-d61bf041da79&maxDataAge=3600&theme=light&autoRefresh=true"
+            
           ></iframe>
         </article>
       </div>

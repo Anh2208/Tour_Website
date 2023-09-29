@@ -9,7 +9,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 const nav__links = [
   {
     path: "/home",
-    display: "Home",
+    display: "Trang chủ",
   },
   {
     path: "/tours",
@@ -17,11 +17,11 @@ const nav__links = [
   },
   {
     path: "/about",
-    display: "About",
+    display: "Về chúng tôi",
   },
   {
     path: "/contact",
-    display: "Contact",
+    display: "Liên hệ",
   },
 ];
 
@@ -163,10 +163,10 @@ const Header = () => {
                 ) : (
                   <>
                     <Button className="btn secondary__btn">
-                      <Link to="/login">Login</Link>
+                      <Link to="/login">Đăng nhập</Link>
                     </Button>
                     <Button className="btn primary__btn">
-                      <Link to="/register">Register</Link>
+                      <Link to="/register">Đăng ký</Link>
                     </Button>
                   </>
                 )}

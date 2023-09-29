@@ -63,7 +63,7 @@ const Register = () => {
                 <div className="user">
                   <img src={userIcon} alt="" />
                 </div>
-                <h2>Register</h2>
+                <h2>Đăng ký</h2>
 
                 <Form onSubmit={handleClick}>
                   <FormGroup>
@@ -114,11 +114,11 @@ const Register = () => {
                     className="btn secondary__btn auth__btn"
                     type="submit"
                   >
-                    Create account
+                    Tạo tài khoản
                   </Button>
                 </Form>
                 <p>
-                  Already have an account? <Link to="/login">Login</Link>
+                  Đã có tài khoản? <Link to="/login">Đăng nhập</Link>
                 </p>
               </div>
             </div>

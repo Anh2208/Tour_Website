@@ -21,47 +21,48 @@ const Contact = () => {
         <Container>
           <Row className="container1">
             <Col lg="12" className="justify-content-center mb-5">
-              <h4 className="mb-5">Let’s talk about your brand:</h4>
+              <h4 className="mb-5">Hãy cho chúng tôi biết suy nghĩ của bạn:</h4>
               <div className="d-flex align-items-center justify-content-center">
                 <Form
                   onSubmit={(event) => {
                     event.preventDefault();
                     alert("Cảm ơn bạn đã gửi thông tin cần trợ giúp cho chúng tôi!");
+                    window.location.reload();
                   }}
                 >
                   <Form.Group className="mb-3">
-                    <Form.Label className="text-lable">Name *</Form.Label>
-                    <Form.Control type="text" required placeholder="Enter your name" />
+                    <Form.Label className="text-lable">Tên *</Form.Label>
+                    <Form.Control type="text" required placeholder="Tên của quý khách" />
                   </Form.Group>
 
                   <Form.Group className="mb-3">
                     <Form.Label className="text-lable">Email</Form.Label>
-                    <Form.Control type="email" required placeholder="Enter your email" />
+                    <Form.Control type="email" required placeholder="Email" />
                   </Form.Group>
 
                   <Form.Group className="mb-3">
                     <Form.Label className="text-lable">
-                      How can we help? *
+                      Chúng tôi giúp được gì? *
                     </Form.Label>
                     <Form.Control
                       required
                       as="textarea"
-                      placeholder="Leave a comment here"
+                      placeholder="Ghi ý kiến của quý khách ở đây..."
                       style={{ height: "100px" }}
                     />
                   </Form.Group>
 
                   <Button className="btn" variant="success" type="submit">
-                    Submit
+                    Gửi
                   </Button>
                 </Form>
               </div>
             </Col>
             <Col lg="12" className="align-items-center justify-content-center">
-              <h4 className="mb-1">Get to know Always Creative:</h4>
+              <h4 className="mb-1">Luôn tìm hiểu và sáng tạo:</h4>
               <h3 className="mb-5">
                 {" "}
-                Được thiết kế bới Hoàng Anh và Hoàng Hiệp với 🧰 tâm huyết của mình
+                Được thiết kế bới Hoàng Anh với tất cả 🧰 tâm huyết của mình
                 , nhóm thực hiện những gì tốt nhất trong khả năng. 👇
               </h3>
             </Col>
@@ -73,13 +74,13 @@ const Contact = () => {
                   rounded
                 />
               </Col>
-              <Col xs={6} md={4}>
+              {/* <Col xs={6} md={4}>
                 <Image
                   className="ima"
                   src="https://zpsocial-f54-org.zadn.vn/ac5c00be010bef55b61a.jpg"
                   rounded
                 />
-              </Col>
+              </Col> */}
             </div>
           </Row>
           <Col lg="12" className="mt-5 accordion">
@@ -93,17 +94,15 @@ const Contact = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>Hoàng Hiệp</Accordion.Header>
+                <Accordion.Header>Trải nghiệm người dùng</Accordion.Header>
                 <Accordion.Body>
-                  Thiết kế trang web với những chức năng cơ bản nhất, đồng thời
-                  sử dụng những công nghệ phù hợp cho hoạt động thiết kế trang
-                  web.
+                  Liên hệ với chúng tôi nếu bạn có bất kỳ thắc mắc hoặc vấn đề gì
+                  cần được giải quyết!
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
           </Col>
         </Container>
-        
       </section>
     </>
   );

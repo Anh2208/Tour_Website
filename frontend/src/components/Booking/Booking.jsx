@@ -98,19 +98,19 @@ const Booking = ({ tour, avgRating }) => {
           {price} VND<span>/ người</span>
         </h3>
         <span className="tour__rating d-flex align-items-center ">
-          <i class="ri-star-s-fill"></i>
+          <i className="ri-star-s-fill"></i>
           {avgRating === 0 ? null : avgRating} ({reviews?.length})
         </span>
       </div>
 
       {/* ========== booking form ============= */}
       <div className="booking__form">
-        <h5>Information</h5>
+        <h5>Thông tin đặt Tour</h5>
         <Form className="booking__info-form" onSubmit={handleClick}>
           <FormGroup>
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Tên khách hàng"
               id="fullName"
               required
               onChange={handleChange}
@@ -119,7 +119,7 @@ const Booking = ({ tour, avgRating }) => {
           <FormGroup>
             <input
               type="number"
-              placeholder="phone"
+              placeholder="Số điện thoại"
               id="phone"
               required
               onChange={handleChange}
@@ -138,7 +138,7 @@ const Booking = ({ tour, avgRating }) => {
             />
             <input
               type="number"
-              placeholder="Số người tham gia"
+              placeholder="Số hành khách"
               min={1}
               id="guestSize"
               max={tour.maxGroupSize}
@@ -159,7 +159,7 @@ const Booking = ({ tour, avgRating }) => {
           </ListGroupItem>
           <ListGroupItem className="border-0 px-0">
             <h5 className="d-flex align-items-center gap-1">
-              {price} VND<i class="ri-close-line"></i> 1 người
+              {price} VND<i className="ri-close-line"></i> 1 người
             </h5>
             <span> {price} VND</span>
           </ListGroupItem>

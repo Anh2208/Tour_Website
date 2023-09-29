@@ -10,9 +10,10 @@ const useFetch = url => {
       setLoading(true);
       try {
         const res = await fetch(url);
-
+        console.log(url);
+        console.log(res);
         if (!res.ok) {
-          setError("failed to fetch");
+          setError("failed to fetch from frontend");
         }
         const result = await res.json();
 

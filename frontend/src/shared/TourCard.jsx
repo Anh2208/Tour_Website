@@ -35,10 +35,10 @@ const TourCard = ({ tour }) => {
         <CardBody>
           <div className="card__top d-flex align-items-center justify-content-between">
             <span className="tour__location d-flex align-items-center gap-1">
-              <i class="ri-map-pin-line"></i> {city}
+              <i className="ri-map-pin-line"></i> {city}
             </span>
             <span className="tour__rating d-flex align-items-center gap-1">
-              <i class="ri-star-s-fill"></i>
+              <i className="ri-star-s-fill"></i>
               {avgRating === 0 ? null : avgRating}
               {totalRating === 0 ? (
                 "Not rated"
@@ -49,21 +49,21 @@ const TourCard = ({ tour }) => {
           </div>
           <div className="card__top d-flex align-items-center justify-content-between">
             <span className="tour__location d-flex align-items-center gap-1">
-              <i class="ri-time-line"></i>
+              <i className="ri-time-line"></i>
               {day}
             </span>
             <span className="tour__rating d-flex align-items-center gap-1">
               Số lượng: {maxGroupSize}
-              <i class="ri-account-circle-fill"></i>
+              <i className="ri-account-circle-fill"></i>
             </span>
           </div>
           <div className="card__top d-flex align-items-center justify-content-between">
             <span className="tour__location d-flex align-items-center gap-1">
-            <i class="ri-time-fill"></i> {displayDate}
+            <i className="ri-time-fill"></i> {displayDate}
             </span>
             <span className="tour__rating d-flex align-items-center gap-1">
               {/* Số lượng: {maxGroupSize}
-              <i class="ri-account-circle-fill"></i> */}
+              <i className="ri-account-circle-fill"></i> */}
             </span>
           </div>
           <h5 className="tour__title title">

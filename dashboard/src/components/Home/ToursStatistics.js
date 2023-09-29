@@ -16,7 +16,7 @@ const ProductsStatistics = () => {
               width: "100%",
               height: "350px",
             }}
-            src="https://charts.mongodb.com/charts-tour-booking-tlwcy/embed/charts?id=643b5573-e2f6-48a8-8b7a-c72c541a71b4&maxDataAge=3600&theme=light&autoRefresh=true"
+            src="https://charts.mongodb.com/charts-tourism-nkvte/embed/charts?id=651696d6-00d9-40d2-8b43-0d187ef88b4e&maxDataAge=3600&theme=light&autoRefresh=true"
           ></iframe>
         </article>
       </div>

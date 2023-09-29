@@ -28,7 +28,7 @@ const Home = () => {
             <Col lg="6">
               <div className="hero__content">
                 <div className="hero__subtitle d-flex align-items-center ">
-                  <Subtitle subtitle={"Bắt đàu chuyến du lịch"} />
+                  <Subtitle subtitle={"Chuyến xe khởi hành"} />
                   <img src={worldImg} alt="" />
                 </div>
                 <h1>
@@ -103,7 +103,7 @@ const Home = () => {
                 <Subtitle subtitle={"Experience"} />
 
                 <h2>
-                  With our all experience <br /> we will serve you
+                  Với tất cả kinh nghiệm <br /> Chúng tôi sẽ phục vụ bạn
                 </h2>
                 <p>
                   Chúng tôi tích lũy kinh nghiệm qua từng ngày.

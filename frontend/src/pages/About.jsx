@@ -100,7 +100,7 @@ const About = () => {
                     Dịch vụ có thanh toán trực tuyến không?
                   </Accordion.Header>
                   <Accordion.Body>
-                    Rất tiếc, hiện tại chúng tôi chưa có dịch vụ này.
+                    Bạn có thể thanh toán trực tuyến thông qua Paypal.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>

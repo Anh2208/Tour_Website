@@ -8,11 +8,11 @@ import { AuthContext } from "./../../context/AuthContext";
 const quick__links = [
   {
     path: "/home",
-    display: "Home",
+    display: "Trang chủ",
   },
   {
     path: "/about",
-    display: "About",
+    display: "Về chúng tôi",
   },
   {
     path: "/tours",
@@ -22,16 +22,16 @@ const quick__links = [
 
 const quick__links2 = [
   {
-    path: "#Experience",
-    display: "Gallery",
+    path: "/tours",
+    display: "Tất cả tours",
   },
   {
     path: "/login",
-    display: "Login",
+    display: "Đăng nhập",
   },
   {
     path: "/register",
-    display: "Register",
+    display: "Đăng ký",
   },
 ];
 
@@ -57,31 +57,31 @@ const Footer = () => {
 
               <div className="social__links d-flex align-items-center gap-4">
                 <span>
-                  <Link to="#">
+                  <a href="https://www.youtube.com/" target="blank">
                     <i className="ri-youtube-line"></i>
-                  </Link>
+                  </a>
                 </span>
                 <span>
-                  <Link to="#">
+                  <a href="https://github.com/" target="blank">
                     <i className="ri-github-fill"></i>
-                  </Link>
+                  </a>
                 </span>
                 <span>
-                  <Link to="#">
+                  <a href="https://facebook.com/" target="blank"> 
                     <i className="ri-facebook-circle-line"></i>
-                  </Link>
+                  </a>
                 </span>
                 <span>
-                  <Link to="#">
+                  <a href="https://www.instagram.com/" target="blank">
                     <i className="ri-instagram-line"></i>
-                  </Link>
+                  </a>
                 </span>
               </div>
             </div>
           </Col>
 
           <Col lg="3">
-            <h5 className="footer__link-title">Discover</h5>
+            <h5 className="footer__link-title">Khám phá</h5>
 
             <ListGroup className="footer__quick-links">
               {quick__links.map((item, index) => (
@@ -96,7 +96,7 @@ const Footer = () => {
           {!user && (
             <>
             <Col lg="3">
-            <h5 className="footer__link-title">Quick Links</h5>
+            <h5 className="footer__link-title">Liên kết nhanh</h5>
 
             <ListGroup className="footer__quick-links">
               {quick__links2.map((item, index) => (
@@ -148,7 +148,7 @@ const Footer = () => {
 
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
-              Copyright {year}, design and develop by Anh and Hiep. All rights
+              Copyright {year}, design and develop by Hoang Anh. All rights
               reserved.
             </p>
           </Col>

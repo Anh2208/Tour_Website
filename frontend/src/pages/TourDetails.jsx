@@ -104,7 +104,7 @@ const TourDetails = () => {
                     <div className="d-flex align-items-center gap-5">
                       <span className="tour__rating d-flex align-items-center gap-1">
                         <i
-                          class="ri-star-s-fill"
+                          className="ri-star-s-fill"
                           style={{ color: "var(--secondary-color)" }}
                         ></i>
                         {avgRating === 0 ? null : avgRating}
@@ -116,42 +116,42 @@ const TourDetails = () => {
                       </span>
 
                       <span>
-                        <i class="ri-group-line"></i> {maxGroupSize} Người
-                        {/* <i class="ri-map-pin-user-fill"></i> {address} */}
+                        <i className="ri-group-line"></i> {maxGroupSize} Người
+                        {/* <i className="ri-map-pin-user-fill"></i> {address} */}
                       </span>
                     </div>
 
                     <div className="tour__extra-details">
                       <span>
-                        <i class="ri-time-fill"></i> {displayDate}
+                        <i className="ri-time-fill"></i> {displayDate}
                       </span>
                       <span>
-                        <i class="ri-time-line"></i>
+                        <i className="ri-time-line"></i>
                         {day}
                       </span>
                       {/* <span>
-                        <i class="ri-map-pin-time-line"></i> {distance} k/m
+                        <i className="ri-map-pin-time-line"></i> {distance} k/m
                       </span> */}
                       <span>
-                        <i class="ri-money-dollar-circle-line"></i>
+                        <i className="ri-money-dollar-circle-line"></i>
                         {price} VND /người
                       </span>
                     </div>
 
                     <div className="tour__extra-details">
                       <span>
-                        <i class="ri-map-pin-2-line"></i> {city}
+                        <i className="ri-map-pin-2-line"></i> {city}
                       </span>
                       {/* <span>
-                        <i class="ri-money-dollar-circle-line"></i>
+                        <i className="ri-money-dollar-circle-line"></i>
                         {price} VND /người
                       </span> */}
                       {/* <span>
-                        <i class="ri-map-pin-time-line"></i> {distance} k/m
+                        <i className="ri-map-pin-time-line"></i> {distance} k/m
                       </span> */}
                       <span>
-                        {/* <i class="ri-group-line"></i> {maxGroupSize} Người */}
-                        <i class="ri-map-pin-fill"></i>
+                        {/* <i className="ri-group-line"></i> {maxGroupSize} Người */}
+                        <i className="ri-map-pin-fill"></i>
                         <span>Thăm quan:</span>
                         {address}
                       </span>
@@ -220,14 +220,14 @@ const TourDetails = () => {
                         <input
                           type="text"
                           ref={reviewMsgRef}
-                          placeholder="share your thoughts"
+                          placeholder="Đánh giá của bạn"
                           required
                         />
                         <button
                           className="btn primary__btn text-white"
                           type="submit"
                         >
-                          Submit
+                          Gửi
                         </button>
                       </div>
                     </Form>
@@ -249,7 +249,7 @@ const TourDetails = () => {
                               </div>
                               <span className="d-flex align-items-center">
                                 {review.rating}
-                                <i class="ri-star-s-fill"></i>
+                                <i className="ri-star-s-fill"></i>
                               </span>
                             </div>
 

@@ -7,7 +7,7 @@ import { createTours } from "../../Redux/Actions/TourActions";
 import Toast from "../LoadingError/Toast";
 import Message from "../LoadingError/Error";
 import Loading from "../LoadingError/Loading";
-import "../tours/tour.css"
+import "../tours/tour.css";
 
 const ToastObjects = {
   pauseOnFocusLoss: false,
@@ -79,7 +79,12 @@ const AddTourMain = () => {
 
   const handleSelectChange = (event) => {
     setFeatured(event.target.value);
-    alert(featured);
+    if(featured === "true"){
+      alert("Đây không phải là tour đặc sắc!!!");
+    }
+    if(featured === "false"){
+      alert("Đây là tour đặc sắc!!!");
+    }
   };
 
   return (
@@ -250,6 +255,9 @@ const AddTourMain = () => {
                     />
                   </div>
                   <div>
+                    <label htmlFor="featured" className="form-label">
+                      Tour đặc sắc
+                    </label>
                     <select
                       id="featured"
                       class="form-select form-select-sm featured"
@@ -263,15 +271,17 @@ const AddTourMain = () => {
                     </select>
                   </div>
                   <div className="mb-4">
-                    <label className="form-label">Hình ảnh</label>
+                    <label htmlFor="image_tour" className="form-label">Hình ảnh</label>
                     <input
                       className="form-control"
+                      id="image_tour"
                       type="text"
                       placeholder="Enter Image URL"
                       value={photo}
                       required
                       onChange={(e) => setPhoto(e.target.value)}
                     />
+                    <span><br/>&emsp; hoặc</span>
                     <input className="form-control mt-3" type="file" />
                   </div>
                 </div>

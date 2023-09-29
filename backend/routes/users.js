@@ -17,7 +17,8 @@ router.put("/pass/:id", updateUser);
 router.put("/:id", updateUserInfo);
 
 // delete user
-router.delete("/:id", verifyUser, deleteUser);
+// router.delete("/:id", verifyUser, deleteUser);
+router.delete("/:id", deleteUser);
 
 // get single user
 router.get("/:id", getSingleUser);
